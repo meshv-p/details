@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+nav div div div div  a:hover{
+    color: red;
+}
+
+nav ul li{
+      display: inline-block;
+      margin-right: 50px;
+    
+}
+
+.button{
+    display: inline-block;
+    background-color: coral;
+    color: white;
+    margin: 30px 0;
+    padding: 8px 30px;
+    border-radius: 30px;
+}
