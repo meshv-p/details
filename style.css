@@ -4,15 +4,57 @@
     box-sizing: border-box;
 }
 
+
+body{
+    background:repeating-linear-gradient(red,blue) ;
+}
 .navbar{
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
+.line :hover  {
+    background:linear-gradient(lightgreen,lightpink);
+}
+
 nav{
     flex: 1;
     text-align: right;
+}
+
+.line {
+    flex-direction: column-reverse;
+    transition: 0s;
+}
+
+.container {
+    text-align: center;
+    transform: translate(-5%,-50%);
+}
+.container span {
+    display: block;
+    
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.text{
+    color: white;
+    letter-spacing: 5px;
+    animation: text 5s 2;
+}
+
+.text1 {
+    color: red;
+    letter-spacing: 5px;
+}
+
+@keyframes text {
+    0%{
+        margin-bottom: -400px;
+    }
+  
+   
 }
 
 nav ul{
@@ -23,9 +65,7 @@ nav ul li a:hover{
     color: red;
 }
 
-nav div div div div  a:hover{
-    color: red;
-}
+
 
 nav ul li{
       display: inline-block;
@@ -33,11 +73,62 @@ nav ul li{
     
 }
 
-.button{
+/* unvisited */
+a:link{
+    color: green;
+}
+
+
+.button {
     display: inline-block;
-    background-color: coral;
-    color: white;
+    
+    color:lightgreen;
     margin: 30px 0;
     padding: 8px 30px;
     border-radius: 30px;
+    
+
+}
+
+
+.pic {
+    transition: transform 5s;
+    flex-direction: 30%;
+   
+}
+
+.pic :hover{
+    transform: translateY(-15px);
+    transition: 10ms;
+    
+}
+
+
+.button :hover{
+    background : red;
+   
+}
+
+
+.tab {
+   
+    transition: 10s;
+}
+.tab :hover {
+    border-radius: 500%;
+    background-color: rgba(233, 233, 18, 0.616);
+    transition: 5s;
+}
+
+a:hover{
+    color: red;
+}
+
+
+.ma {
+    transition: 5s;
+}
+.ma:hover {
+    background-color:lightgreen;
+    transition: 5s;
 }
